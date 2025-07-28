@@ -1,0 +1,72 @@
+% Gemini theme
+% https://github.com/anishathalye/gemini
+
+% ====================
+% Definitions
+% ====================
+
+% Coe College Colors (Based on their branding guidelines/common usage)
+\definecolor{coe_maroon}{RGB}{130, 36, 51}
+\definecolor{coe_gold}{RGB}{197, 169, 0}
+\definecolor{coe_lightgold}{RGB}{255, 250, 230} % A softer, lighter gold for backgrounds
+
+% Catholic University of America (CUA) Colors
+\definecolor{cua_cardinalred}{RGB}{166, 25, 46}
+\definecolor{cua_navyblue}{RGB}{0, 40, 85}
+\definecolor{cua_lightgray}{RGB}{245, 246, 250} % From original, good neutral base
+
+% Original Colors you liked (keeping these defined for clarity, even if not directly used in blocks)
+\definecolor{lightgray_orig}{RGB}{245, 246, 250} % Original lightgray for example block body
+\definecolor{cardinalred_orig}{RGB}{166, 25, 46} % Original cardinalred for headline rule
+\definecolor{navyblue_orig}{RGB}{0, 40, 85}      % Original navyblue for headline bg
+\definecolor{maroon_orig}{RGB}{130, 36, 51}      % Original maroon for structure and block alerted title
+\definecolor{gold_orig}{RGB}{197, 169, 0}        % Original gold for block example title
+\definecolor{lightgold_orig}{RGB}{255, 250, 230} % Original lightgold for alerted block body
+
+
+% ====================
+% Theme
+% ====================
+
+% Basic colors
+\setbeamercolor{palette primary}{fg=black,bg=white}
+\setbeamercolor{palette secondary}{fg=black,bg=white}
+\setbeamercolor{palette tertiary}{bg=cua_navyblue,fg=white} % Good for highlights
+\setbeamercolor{palette quaternary}{fg=black,bg=white}
+\setbeamercolor{structure}{fg=coe_maroon} % Structural elements like titles - RETAINED ORIGINAL MAROON
+
+% Headline
+\setbeamercolor{headline}{fg=lightgray_orig,bg=navyblue_orig} % RETAINED ORIGINAL
+\setbeamercolor{headline rule}{bg=cardinalred_orig} % RETAINED ORIGINAL
+
+% Block (Regular)
+\setbeamercolor{block title}{fg=navyblue_orig,bg=white} % RETAINED ORIGINAL
+\setbeamercolor{block separator}{bg=black} % RETAINED ORIGINAL (line under name)
+\setbeamercolor{block body}{fg=black,bg=white} % RETAINED ORIGINAL
+
+% Alert Block
+\setbeamercolor{block alerted title}{fg=maroon_orig,bg=lightgold_orig} % RETAINED ORIGINAL
+\setbeamercolor{block alerted separator}{bg=black} % RETAINED ORIGINAL (line under name)
+\setbeamercolor{block alerted body}{fg=black,bg=lightgold_orig} % RETAINED ORIGINAL
+
+% Example Block (This is the "Optimization Mathematics" block)
+\setbeamercolor{block example title}{fg=coe_maroon,bg=lightgray_orig} % CHANGED: Title color from gold_orig to coe_maroon
+\setbeamercolor{block example separator}{bg=black} % RETAINED ORIGINAL (line under name)
+\setbeamercolor{block example body}{fg=black,bg=lightgray_orig} % RETAINED ORIGINAL
+
+% Heading
+\setbeamercolor{heading}{fg=black}
+
+% Itemize
+\setbeamercolor{item}{fg=cua_cardinalred} % Changed to CUA Cardinal Red for accent
+
+% Bibliography
+\setbeamercolor{bibliography item}{fg=black}
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=black}
+\setbeamercolor{bibliography entry note}{fg=black}
+\setbeamertemplate{bibliography entry article}{}
+\setbeamertemplate{bibliography entry title}{}
+\setbeamertemplate{bibliography entry location}{}
+\setbeamertemplate{bibliography entry note}{}
