@@ -103,7 +103,7 @@
 \begin{column}{\colwidth}
 \vspace{-.5cm}
   \begin{exampleblock}{Abstract}
-    Deuteron electro-disintegration $(D(e,e'p)n)$ is a nuclear reaction where an electron beam collides with a deuteron nucleus, ejecting the proton and causing the neutron to recoil. This experiment tests various theoretical frameworks, such as Final State Interaction (FSI) and Plane Wave Impulse Approximation (PWIA). To study the $(D(e, e'p)n)$ reaction at Thomas Jefferson National Accelerator Facility (JLab), we calibrate the Super High Momentum Spectrometer (SHMS) and High Momentum Spectrometer (HMS) to enable accurate kinematic measurements. To do this, we use a well-understood hydrogen elastic $(H(e, e')p)$ reaction where the kinematics can be obtained by reconstruction (data) and Monte Carlo simulation (SIMC). The histograms from data and SIMC often have some offset between their peaks. An effective method to correct these deviances is by using a chi-squared optimization method that calculates the optimal global spectrometer offsets to best align simulation and data. Ultimately, this study prepares the SHMS and HMS for accurate kinematic measurements during future $D(e,e'p)n$ studies at JLab.
+    Deuteron electro-disintegration $(D(e,e'p)n)$ is a nuclear reaction in which an electron beam collides with a deuteron nucleus, ejecting the proton and causing the neutron to recoil. The $D(e,e'p)n$ experiment tests various theoretical frameworks, such as Final State Interaction (FSI) and Plane Wave Impulse Approximation (PWIA). To study the $(D(e, e'p)n)$ reaction at Thomas Jefferson National Accelerator Facility (JLab), we optimized the kinematic measurements of the Super High Momentum Spectrometer (SHMS) and High Momentum Spectrometer (HMS) using chi-squared optimization on a hydrogen elastic scattering reaction ($H(e,e')p$) using experiment reconstruction (data) and Monte Carlo simulation (SIMC). The chi-squared optimization method implemented calculates the optimal global spectrometer offsets to best align the SIMC and data histograms. This study prepares the SHMS and HMS for accurate kinematic measurements during future $D(e,e'p)n$ studies at JLab.
     \end{exampleblock}
 \vspace{-0.5cm}
   \begin{block}{Kinematic Diagrams}
@@ -116,11 +116,11 @@
       \label{fig:deuteron-kinematics}
 \vspace{-1cm}
 \begin{itemize}
-   \item Electron beam interacts with the deuteron nucleus, removing the proton from the nucleus via a virtual photon and causing the neutron to recoil.
-   \item Neutron momentum and trajectory reconstructed from proton and electron measured momentum.
+   \item An electron beam interacts with the deuteron nucleus, removing the proton from the nucleus via a virtual photon and causing the neutron to recoil.
+   \item Neutron momentum and trajectory are reconstructed from the measured proton and electron momenta.
 \end{itemize}
-      \vspace{-1cm}
-      \begin{tikzpicture}[>=latex,scale=1.2]
+      \vspace{-.75cm}
+      \begin{tikzpicture}[>=latex,scale=1.45]
         % Incoming electron
         \draw[->, blue, line width=3pt] (-8, 0) node[left] {$e$} node[left, xshift=3cm, yshift=1.5cm]{$E\approx|\vec{k}|$}
         -- (0, 0) 
@@ -163,20 +163,19 @@
         \node[gray] at (11.4, 0) {$z$};
         \node[gray] at (0, 4.4) {$x$};
       \end{tikzpicture}
-      \vspace{-1cm}\caption{Diagram of Hydrogen Elastic Scattering Kinematics.}
+      \vspace{-.75cm}\caption{Diagram of Hydrogen Elastic Scattering Kinematics.}
       \label{fig:hydrogen-elastic-kinematics}
   \end{figure}
 \vspace{-1.25cm}
 \begin{itemize}
-    \item Similar to $D(e,e'p)n$ interaction, electron beam ejects protons in target.
-    \item Initial and final energies of all particles involved can be measured.
-    \item Differences between calculated and measured kinematic values are due to detector errors.
-\vspace{.5cm}
+    \item Similar to $D(e,e'p)n$ interaction, the electron beam ejects protons from the target.
+    \item The initial and final energies of all particles involved can be measured.
+    \item Differences between calculated and measured kinematic values indicate detector errors.
+    \end{itemize}
+\vspace{-.5cm}
 \heading{Delta (Relative Momentum Difference)}
-The relative momentum difference, $\delta$, quantifies the deviation between a particle's measured momentum and the central momentum of the spectrometer: $$\delta=100\cdot \frac{P_{meas}-P_0}{P_0}$$
-where $P_{meas}$ is the measured momentum of the particle and $P_0$ is the central momentum of the spectrometer.
+The relative momentum difference, $\delta$, quantifies the deviation between a particle's measured momentum ($P_{meas}$) and the central momentum of the spectrometer ($P_0$): $$\delta=100\cdot \frac{P_{meas}-P_0}{P_0}$$
 
-\end{itemize}
 \end{block}
 
 \end{column}
@@ -186,18 +185,22 @@ where $P_{meas}$ is the measured momentum of the particle and $P_0$ is the centr
 \begin{column}{\colwidth}
 \vspace{-0.5cm}
 \begin{block}{Kinematic Formulas}
-Important kinematic variables to calculate in this reaction are invariant mass of the proton ($W$), missing energy ($E_m$), and missing momentum in the x, y, and z directions ($P_{mx},P_{my},P_{mz}$), since they are well-known in the kinematic theory of the reaction and provide insight into the interaction, such as elasticity. The formulas for these values are:
+Important kinematic variables for this reaction are the invariant mass of the proton ($W$), missing energy ($E_m$), and missing momentum in the x, y, and z directions ($P_{mx},P_{my},P_{mz}$). The formulas for these values are:
     $$W^2=M_p^2+2M_p(E-E')-4EE'\sin^2(\theta_e/2),$$
     $$E_m=E+M_p-E'-\sqrt{M_p^2+P_p^2},$$
     $$P_{mx}=-E'\sin(\theta_e)\cos(\phi_e)-P_p\sin(\theta_p)\cos(\phi_p),$$
     $$P_{my}=-E'\sin(\phi_e)-P_p\sin(\phi_p),$$
     $$P_{mz}=E-E'\cos(\theta_e)\cos(\phi_e)-P_p\cos(\theta_p)\cos(\phi_p),$$
     where $M_p$ is the mass of a proton and $k\approx E$, $k'\approx E'$ in the extreme relativistic limit.
-\vspace{-.25cm}
+\vspace{-.5cm}
+\begin{itemize}
+    \item Kinematics are well understood and provide insight into the reaction (e.g., elasticity).
+\end{itemize}
+\vspace{-.5cm}
 \heading{DeltaP}
 \vspace{-.5cm}
     \begin{itemize}
-        \item Some models correct HMS central momentum by applying a correction factor, $f_{corr}^{HMS}$, where $P_0$ is the central momentum of the HMS and $E$ is the beam energy.
+        \item Some models correct the HMS central momentum by applying a correction factor, $f_{corr}^{HMS}$, where $P_0$ is the central momentum of the HMS and $E$ is the energy of the incoming electrons.
     \end{itemize}
     \centering
     $f_{corr}^{HMS}=1-\frac{\Delta P_{simc}-\Delta P_{data}}{P_0}$\hspace{3cm}$\Delta P=P_{calc}-P_{meas}$ \\ \vspace{.25cm}
@@ -240,10 +243,11 @@ Important kinematic variables to calculate in this reaction are invariant mass o
 
 \begin{exampleblock}{Optimization Mathematics}
 \begin{itemize}
-    \item Uses $\mathbb{M}\vec{x}=\vec{y}+\hat\epsilon$, where $\mathbb{M}$ is the model matrix, $\vec{x}$ is the optimized parameter vector, $\vec{y}$ is the difference between simulated and observed kinematic variables, and $\hat\epsilon$ is the residual between the ``predicted" kinematic differences ($\mathbb{M}\vec{x}$) and actual differences ($\vec{y}$).
-    \item  Chi-squared method is applied to optimize the SHMS and HMS by minimizing $\hat\epsilon$.
-    \item $\scriptsize \chi^2=\sum\limits_{i}\frac{(O_{obs}-C_{calc})^2}{\sigma^2_i}$, where $O_{obs}$ is the observed value, $C_{calc}$ is the calculated value, and $\sigma_{i}$ is the uncertainty of the parameter.
-    \item $\chi^2$ becomes $\chi^2=\hat\epsilon^T\mathbb{N}^{-1}\hat\epsilon$ in matrix form, where $\mathbb{N}$ is a diagonal covariant matrix that contains the uncertainties of each spectrometer parameter (assuming uncorrelated measurement uncertainties).
+    \item $\mathbb{M}\vec{x}=\vec{y}+\hat\epsilon$, where $\mathbb{M}$ is the model matrix, $\vec{x}$ is the optimized parameter vector, $\vec{y}$ is the difference between simulated and observed kinematic variables, and $\hat\epsilon$ is the residual vector.
+    \item The model matrix $\mathbb{M}$ contains derivatives of kinematic variables with respect to spectrometer offsets.
+    \item  The SHMS and HMS are optimized by minimizing $\hat\epsilon$.
+    \item $\scriptsize \chi^2=\sum\limits_{i}\frac{(O_{obs}-C_{calc})^2}{\sigma^2_i}$, where $O_{obs}$ is the observed value, $C_{calc}$ is the calculated value, and $\sigma_{i}$ is the uncertainty of the variable.
+    \item In matrix form, $\chi^2$ becomes $\chi^2=\hat\epsilon^T\mathbb{N}^{-1}\hat\epsilon$, where $\mathbb{N}$ is a diagonal covariant matrix with the uncertainties of each kinematic variable (assuming uncorrelated measurement errors).
     \item The optimal solution satisfies $\frac{\partial \chi^2}{\partial \vec{x}}=0$, leading to the equation $ \vec{x}=(\mathbb{M}^T\mathbb{N}^{-1}\mathbb{M})^{-1}\mathbb{M}^T\mathbb{N}^{-1}\vec{y}$.
     \item All calculations are automated using Python.
 \end{itemize}
@@ -325,17 +329,17 @@ $$
   \caption{Optimized spectra for $W$, $E_m$, $P_{mx}$, $P_{my}$, and $P_{mz}$ using Model 3 offsets on a $\delta=0$ run.}
 \end{figure}
 \vspace{-.75cm}
-Model 0 best minimized the distance between the peaks of the SIMC and data histograms out of all models. Other models had larger shifts between the peaks of the two lines in nearly all kinematic variables, seen in Figure 6 above.
+Model 0 best minimized the distance between the peaks of the SIMC and data histograms compared to all other models. Other models exhibited larger shifts between the peaks of the two lines in nearly all kinematic variables, as seen in Figure 6.
 
 \end{block}
 \vspace{-.5cm}
   \begin{exampleblock}{Conclusions}
 
     \begin{itemize}
-        \item Chi-squared minimization is an effective method for kinematic optimization in hydrogen elastic experiments.
-        \item Optimization algorithms in Python yielded an effective and modular solution for rapid computation.
+        \item Chi-squared minimization is an effective method for kinematic optimization in hydrogen elastic scattering experiments.
+        \item Optimization algorithms implemented in Python yielded an effective and modular solution for rapid computation.
         \item Model 0 offers the best agreement between data and SIMC, where deltaP was applied to the final proton momentum before kinematic optimization.
-        \item Applying spectrometer offsets to both SIMC and data reconstructions complicates kinematic optimization, though necessary to ensure consistent physics event conditions.
+        \item Applying spectrometer offsets to both SIMC and data reconstructions complicates kinematic optimization, though it is necessary to ensure consistent physics event conditions.
     \end{itemize}
 
   \end{exampleblock}
@@ -345,7 +349,7 @@ Model 0 best minimized the distance between the peaks of the SIMC and data histo
     \item Apply kinematic optimization over a larger number and range of $\delta$ runs.
     \item Investigate new models that utilize different spectrometer offset variables.
     \item Include out-of-plane offsets with Model 0 for further alignment of $E_m, P_{my},\text{ and } P_{mz}$.
-    \item Study the extent to which using different proton final momentum correction methods, such as deltaP, affect kinematic optimization.
+    \item Study the extent to which different proton final momentum correction methods, such as deltaP, affect kinematic optimization.
 \end{itemize}
 \end{block}
 \vspace{-1.25cm}
@@ -359,11 +363,12 @@ Model 0 best minimized the distance between the peaks of the SIMC and data histo
 
 \vspace{-1.25cm}
   \begin{block}{Acknowledgements}
-\small We would like to thank the Catholic University of America for the use of their facilities and the Thomas Jefferson National Accelerator Facility for their computational resources. We are also grateful to the National Science Foundation for the funding of this project under Award No. 2349155. 
+\small We would like to thank The Catholic University of America for the use of their facilities and the Thomas Jefferson National Accelerator Facility for the contribution of their computational resources. We are also grateful to the National Science Foundation for the funding of this project under Award No. 2349155. 
 
   \end{block}
 
 \end{column}
+
 \separatorcolumn
 \end{columns}
 \end{frame}
